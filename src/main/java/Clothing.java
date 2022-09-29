@@ -3,6 +3,12 @@ public class Clothing {
     private double price;
     private char size;
 
+    public Clothing(String description, double price, char size) {
+        this.description = description;
+        this.price = price;
+        this.size = size;
+    }
+
     public String getDescription() {
         return description;
     }
@@ -23,7 +29,7 @@ public class Clothing {
         return this.price;
     }
     public char getSize(){
-        return 0;
+        return this.size;
     }
 
     @Override
